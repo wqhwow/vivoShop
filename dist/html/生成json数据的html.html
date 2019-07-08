@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>生成json数据</title>
+	<script>
+		// 外层数组
+		var arr = [{
+			id:0,title:"手机",
+			child:[{
+				title:"iQOO Neo 6GB+128GB",
+				name:"iQOO Neo 6GB+128GB 碳纤黑",
+				img:"1.jpg",
+				price:"1998",
+				details:"骁龙845旗舰处理器，4500mAh超长续航，22.5W闪充，水滴全面屏，超级液冷散热，4D游戏震感2.0，超广角AI三摄"
+			},{
+				title:"iQOO 6GB+128GB",
+				name:"iQOO 8GB+128GB 电光蓝",
+				img:"2.jpg",
+				price:"2998",
+				details:"高通骁龙855旗舰处理器，44W闪充，超级液冷散热，4D游戏震感2.0+游戏环绕音，Monster Touch压感按键"
+			},{
+				title:"Z5x 6GB+64GB",
+				name:"Z5x 6GB+64GB 极光色",
+				img:"3.jpg",
+				price:"1498",
+				details:"5000mAh大电池，骁龙710处理器，强劲闪充强续航，6.53英寸极点全面屏，超广角AI三摄，前置1600万AI美颜"
+			},{
+				title:"X27 8GB+256GB",
+				name:"X27 8GB+256GB 雀羽蓝",
+				img:"4.jpg",
+				price:"3298",
+				details:"升降式摄像头，19.5:9零界全面屏，4800万后置三摄+超广角+超微距+超级夜景+超级逆光，vivo闪充，零感水冷散热"
+			},{
+				title:"Z3x 6GB+64GB",
+				name:"Z3x 6GB+64GB 极光色",
+				img:"5.jpg",
+				price:"1198",
+				details:"19:9超清全面屏，骁龙660AIE处理器，前置1600万像素，3D炫彩流光机身，Jovi人工智能助理"
+			},{
+				title:"Z3 6GB+64GB",
+				name:"Z3 6GB+64GB 极光蓝",
+				img:"6.jpg",
+				price:"1248",
+				details:"骁龙710AIE处理器，6.3英寸水滴屏，双涡轮加速引擎，4D游戏震感，vivo游戏魔盒，红外人脸识别，AI焕颜相机"
+			},{
+				title:"Z1青春版4GB+64GB",
+				name:"Z1青春版4GB+64GB 炫慕红",
+				img:"7.jpg",
+				price:"1049",
+				details:"6.26英寸刘海屏 ，八核处理器，Face Wake面部+指纹双识别，前置1600万AI智慧美颜"
+			},{
+				title:"Z5x 6GB+128GB",
+				name:"Z5x 6GB+128GB 幻影黑",
+				img:"8.jpg",
+				price:"1698",
+				details:"5000mAh大电池，骁龙710处理器，强劲闪充强续航，6.53英寸极点全面屏，超广角AI三摄，前置1600万AI美颜"
+			},{
+				title:"S1 6GB+128GB",
+				name:"S1 6GB+128GB 冰湖蓝",
+				img:"9.jpg",
+				price:"1998",
+				details:" 零界全面屏，升降式摄像头，前置2480万AI高清自拍，超广角AI三摄，3940mAh大电池，双引擎闪充"
+			}]
+		},{
+			id:1,title:"充电",
+			child:[{
+				title:"vivo原装超快闪充数据线",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo X27（8G+128G版）原装Type-C数据线",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"iQOO原装44W超快闪充充电器",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo X23/Z3原装闪充数据线",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo原装Type-C数据线-2.25A",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo原装10V/2.25A闪充充电器",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo原装闪充数据线",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo原装9V/2A双引擎闪充 白色",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo原装旅行充电器5V/1.6A",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo原装低压闪充数据线",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"iQOO原装闪电胶囊数据线",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乔威 移动电源JP90ST",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"飞毛腿 V10 移动电源",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo原装低压闪充充电器",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo原装Micro USB数据线",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			}
+			]
+		},{
+			id:2,title:"音乐",
+			child:[{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"vivo XE160原装耳机",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			}]
+		},{
+			id:3,title:"配件",
+			child:[{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"X27 原装高透保护膜",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			}]
+		},{
+			id:4,title:"智能",
+			child:[{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"乐心手环Mambo5",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			}]
+		},{
+			id:5,title:"摄影",
+			child:[{
+				title:"远点拍 蓝牙三脚架自拍杆",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"远点拍 蓝牙三脚架自拍杆",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"远点拍 蓝牙三脚架自拍杆",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"远点拍 蓝牙三脚架自拍杆",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"远点拍 蓝牙三脚架自拍杆",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"远点拍 蓝牙三脚架自拍杆",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			}]
+		},{
+			id:6,title:"生活",
+			child:[{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			},{
+				title:"V.FRIENDS摆件公仔",
+				img:'10.jpg',
+				price:'49',
+				details:'充电超快，音质特别好，电量超高无损耗，外形美观，功能强大'
+			}]
+		}]
+
+		//转成json字符串
+		var str = JSON.stringify(arr);
+		document.write(str);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
